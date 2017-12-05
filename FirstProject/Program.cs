@@ -10,6 +10,7 @@ namespace FirstProject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("aviel is the king");
         }
     }
 }
