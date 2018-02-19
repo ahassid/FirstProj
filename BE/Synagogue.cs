@@ -10,6 +10,7 @@ namespace BE
     {
         public string name { get; set; }
         public string address { get; set; }
+        public string note { get; set; }
         public Nosah nosah;
         public List<Pray> prays = new List<Pray>();
 

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "DAL\Dal.csproj", "{C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS", "DS\DS.csproj", "{8A8E62E0-FFA6-427B-8B0A-ABBD4ED88F2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_UI", "WPF_UI\WPF_UI.csproj", "{B6677C8A-971D-4EA0-9513-5197CBB67FB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8A8E62E0-FFA6-427B-8B0A-ABBD4ED88F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A8E62E0-FFA6-427B-8B0A-ABBD4ED88F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A8E62E0-FFA6-427B-8B0A-ABBD4ED88F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6677C8A-971D-4EA0-9513-5197CBB67FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6677C8A-971D-4EA0-9513-5197CBB67FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6677C8A-971D-4EA0-9513-5197CBB67FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6677C8A-971D-4EA0-9513-5197CBB67FB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
