@@ -6,9 +6,32 @@
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:local="clr-namespace:WPF_UI" mc:Ignorable="d" Title="MainWindow"
-        Background="Silver" Height="400" Width="500" WindowStyle="None" WindowStartupLocation="CenterScreen">
+        Background="Red" Height="400" Width="550" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid.RowDefinitions>
+        <TabControl Grid.ColumnSpan="2" Grid.RowSpan="2" Background="RoyalBlue">
+            <TabItem Header="Home" Style="{StaticResource myTab}">
+                <Grid>
+                    <Label TextBlock.FontSize="30" Content="ותיקין היו גומרין אותה עם הנץ החמה'" Margin="10,10,36,278" />
+                    <Label TextBlock.FontSize="30" Content="'כדי שיסמוך גאולה לתפלה" Margin="75,76,112,216" />
+                    <Image Source="C:\Users\Kof\Source\Repos\FirstProj\WPF_UI\Images\Hawk.jpg" Margin="119,133,138,26" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Search" Style="{StaticResource myTab}">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Changes" Style="{StaticResource myTab}">
+                <Grid>
+                    <Button x:Name="AddButton" Content="Additions" Style="{StaticResource myButton}" HorizontalAlignment="Left" Margin="2,26,0,0" VerticalAlignment="Top" />
+                    <Button x:Name="DeleteButton" Content="Deletions" Style="{StaticResource myButton}" HorizontalAlignment="Right" Margin="0,26,2,0" VerticalAlignment="Top" Grid.Column="1" />
+                    <Button x:Name="UpdateButton" Content="Updatings" Style="{StaticResource myButton}" HorizontalAlignment="Left" Margin="2,0,0,26" VerticalAlignment="Bottom" Grid.Row="1" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+    <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -16,9 +39,5 @@
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
-        <Button x:Name="AddButton" Content="Additions" Style="{StaticResource myButton}" HorizontalAlignment="Left" Margin="2,26,0,0" VerticalAlignment="Top" />
-        <Button x:Name="DeleteButton" Content="Deletions" Style="{StaticResource myButton}" HorizontalAlignment="Right" Margin="0,26,2,0" VerticalAlignment="Top" Grid.Column="1" />
-        <Button x:Name="UpdateButton" Content="Updatings" Style="{StaticResource myButton}" HorizontalAlignment="Left" Margin="2,0,0,26" VerticalAlignment="Bottom" Grid.Row="1" />
-        <Button x:Name="SearchButton" Content="Searchings" Style="{StaticResource myButton}" HorizontalAlignment="Right" Margin="0,0,2,26" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1" />
     </Grid>
 </Window>
