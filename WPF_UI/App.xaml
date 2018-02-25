@@ -24,6 +24,12 @@
             <Setter Property="Height" Value="30" />
             <Setter Property="FontStyle" Value="Oblique" />
         </Style>
+
+        <Style x:Key="myLabel" TargetType="Label">
+            <Setter Property="Height" Value="30" />
+            <Setter Property="Width" Value="70" />
+            <Setter Property="FontSize" Value="15" />
+        </Style>
         
     </Application.Resources>
 </Application>
