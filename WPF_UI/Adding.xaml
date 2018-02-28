@@ -35,8 +35,8 @@
                     <Label x:Name="label3" Content="Kind Of Pray:" Grid.Row="0" Style="{StaticResource myLabel}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
                     <Label x:Name="label4" Content="Synagogue:" Style="{StaticResource myLabel}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" Grid.Row="1"/>
                     <Label x:Name="label5" Content="Time:" Style="{StaticResource myLabel}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" Grid.Row="2"/>
-                    <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="10,0,0,0" Grid.Column="1"/>
-                    <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="10,0,0,0" Grid.Column="1" Grid.Row="1"/>
+                    <ComboBox x:Name="KindPraycomboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="10,0,0,0" Grid.Column="1"/>
+                    <ComboBox x:Name="SynagoguecomboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="10,0,0,0" Grid.Column="1" Grid.Row="1"/>
                     <DatePicker HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2"/>
                 </Grid>
             </TabItem>
