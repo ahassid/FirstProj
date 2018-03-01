@@ -27,9 +27,16 @@ namespace WPF_UI
             InitializeComponent();
         }
 
-        private void AddButton_Click(object sender, RoutedEventArgs e)
+        private void SynagogueAdditionButton_Click(object sender, RoutedEventArgs e)
         {
+            var v = new Adding();
+            v.ShowDialog();
+        }
 
+        private void PrayUpdationButton_Click(object sender, RoutedEventArgs e)
+        {
+            var v = new AddingPray();
+            v.ShowDialog();
         }
     }
 }

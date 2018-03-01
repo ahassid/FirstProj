@@ -10,8 +10,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="1*" />
-                <RowDefinition Height="2*" />
-            </Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="3*" />
@@ -22,5 +23,7 @@
             <ComboBox x:Name="KindPraycomboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="10,0,0,0" Grid.Column="1"/>
             <ComboBox x:Name="SynagoguecomboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="10,0,0,0" Grid.Column="1" Grid.Row="1" SelectionChanged="SynagoguecomboBox_SelectionChanged"/>
             <DatePicker HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2"/>
-        </Grid>
+            <Button x:Name="PrayButton" Content="Add Pray" Background="Aqua" Foreground="OrangeRed" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,200,0" Grid.Row="4" VerticalAlignment="Center" Height="40" Width="150"/>
+
+    </Grid>
 </Window>

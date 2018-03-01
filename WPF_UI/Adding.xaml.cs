@@ -31,12 +31,12 @@ namespace WPF_UI
             this.NosahcomboBox.ItemsSource = Enum.GetValues(typeof(BE.Nosah));
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void SunagogueButton_Click(object sender, RoutedEventArgs e)
         {
             s.name = textBox.Text;
             s.address = textBox1.Text;
             s.notes = textBox2.Text;
-            s.nosah = (ComboBoxItem)NosahcomboBox.SelectedItem;
+          //  s.nosah = (ComboBoxItem)NosahcomboBox.SelectedItem;
             
         }
 
