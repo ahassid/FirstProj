@@ -40,7 +40,7 @@ namespace WPF_UI
             
         }
 
-        private void SynagoguecomboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void NosahcomboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

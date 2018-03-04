@@ -24,6 +24,7 @@
             <ComboBox x:Name="SynagoguecomboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="10,0,0,0" Grid.Column="1" Grid.Row="1" SelectionChanged="SynagoguecomboBox_SelectionChanged"/>
             <DatePicker HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2"/>
             <Button x:Name="PrayButton" Content="Add Pray" Background="Aqua" Foreground="OrangeRed" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,200,0" Grid.Row="4" VerticalAlignment="Center" Height="40" Width="150"/>
+            <Image x:Name="image" Source="C:\Users\Kof\Source\Repos\FirstProj\WPF_UI\Images\ArrowBack.jpg" Grid.Column="1" HorizontalAlignment="Right" Height="42" Margin="0,10,10,0" VerticalAlignment="Top" Width="42" />
 
     </Grid>
 </Window>

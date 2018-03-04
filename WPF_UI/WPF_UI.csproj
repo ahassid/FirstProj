@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Adding.xaml">
+    <Page Include="AddingSynagogue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -67,8 +67,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Adding.xaml.cs">
-      <DependentUpon>Adding.xaml</DependentUpon>
+    <Compile Include="AddingSynagogue.xaml.cs">
+      <DependentUpon>AddingSynagogue.xaml</DependentUpon>
     </Compile>
     <Compile Include="AddingPray.xaml.cs">
       <DependentUpon>AddingPray.xaml</DependentUpon>
@@ -121,6 +121,9 @@
       <Project>{5460be0c-eb1c-4723-af0b-71d0c7309b70}</Project>
       <Name>BL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ArrowBack.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

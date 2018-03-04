@@ -16,9 +16,9 @@ namespace Dal
             return DataSource.synagogue.Find(s => s.name == name);
         }
 
-        public Pray getPray(DateTime t, Synagogue s)
+        public IEnumerable<Pray> getPrays(Synagogue s, KindPray kp)
         {
-            return s.prays.Find(m => m.time == t);
+            return s.prays.Where(p => p.pray == kp);
         }
         #endregion
         #region Add Funcs

@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BE;
+using BL;
 
 namespace WPF_UI
 {
@@ -19,9 +21,16 @@ namespace WPF_UI
     /// </summary>
     public partial class AddingPray : Window
     {
+        BL.IBL bl;
+        BE.Pray p;
+
         public AddingPray()
         {
             InitializeComponent();
+
+            p = new BE.Pray();
+            this.KindPraycomboBox.ItemsSource = Enum.GetValues(typeof(BE.KindPray));
+            this.SynagoguecomboBox.ItemsSource = bl.GetAllSynagogues();
         }
 
         private void SynagoguecomboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

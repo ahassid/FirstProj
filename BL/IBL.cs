@@ -14,6 +14,7 @@ namespace BL
     public class IBL
     {
         IDal D;
+
         #region Add Funcs
         public void addPray(Pray p)
         {
@@ -41,9 +42,24 @@ namespace BL
         }
         #endregion
 
-        public IEnumerable<Pray> PrayByKind(KindPray kp)
+        public IEnumerable<Pray> GetAllPrays()
         {
-            return D.getAllPrays(p => p.pray == kp);
+            return D.getAllPrays();
+        }
+
+        public IEnumerable<Synagogue> GetAllSynagogues()
+        {
+            return D.getAllSynagogues();
+        }
+
+        public IEnumerable<Pray> PrayByKind(Synagogue s, KindPray kp)
+        {
+            return D.getPrays(s, kp);
+        }
+
+        public Synagogue GetSynagogue(string s)
+        {
+            return D.getSynagogue(s);
         }
 
         public IEnumerable<Pray> PrayByTime(DateTime time, KindPray kp)
