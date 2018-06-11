@@ -46,5 +46,11 @@ namespace WPF_UI
         {
 
         }
+
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            var v = new UpdatePray();
+            v.ShowDialog();
+        }
     }
 }

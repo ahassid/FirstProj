@@ -44,7 +44,7 @@ namespace WPF_UI
         {
             p.pray = (BE.KindPray)KindPraycomboBox.SelectedValue;
             p.synag = (BE.Synagogue)SynagoguecomboBox.SelectedValue;
-            p.time = TimeDatePicker.SelectedDate.Value;
+          //  p.time = TimeDatePicker.SelectedDate.Value;
         }
     }
 }

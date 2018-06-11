@@ -9,6 +9,7 @@ using Dal;
 using GoogleMapsApi.Entities.Directions.Request;
 using GoogleMapsApi.Entities.Directions.Response;
 using GoogleMapsApi;
+using System.Collections;
 
 namespace BL
 {
@@ -53,6 +54,11 @@ namespace BL
             return D.getAllPrays();
         }
 
+        public IEnumerable PrayBySynagogue(System.Windows.Controls.ComboBoxItem c)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Synagogue> GetAllSynagogues()
         {
             return D.getAllSynagogues();
@@ -61,6 +67,11 @@ namespace BL
         public Synagogue GetSynagogue(string s)
         {
             return D.getSynagogue(s);
+        }
+
+        public IEnumerable<Pray> PrayBySynagogue(Synagogue s)
+        {
+            return D.getPrays(s);
         }
 
         public IEnumerable<Pray> PrayByKind(Synagogue s, KindPray kp)

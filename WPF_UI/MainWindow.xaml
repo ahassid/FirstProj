@@ -38,7 +38,7 @@
                     <Button x:Name="PrayUpdationButton" Content="Pray's Addition" Style="{StaticResource myButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="0" Click="PrayUpdationButton_Click" />
                     <Button x:Name="DeleteButton" Content="Deletions" Style="{StaticResource myButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" Grid.Row="1" />
                     <Button x:Name="SynagogueUpdationButton" Content="Synagogue's Updation" Style="{StaticResource myButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Click="SynagogueUpdationButton_Click" />
-                    <Button x:Name="UpdateButton" Content="Pray's Updation" Style="{StaticResource myButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" />
+                    <Button x:Name="UpdateButton" Content="Pray's Updation" Style="{StaticResource myButton}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" Click="UpdateButton_Click" />
                 </Grid>
             </TabItem>
         </TabControl>

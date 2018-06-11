@@ -7,7 +7,7 @@
         mc:Ignorable="d" Height="400" Width="550" 
         WindowStyle="None" WindowStartupLocation="CenterScreen"
     Title="UpdatePray">
-    <Grid Background="SeaGreen" Margin="0,0,0,0">
+    <Grid Style="{StaticResource myGrid}" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="4*" />
@@ -21,8 +21,15 @@
         </Grid.RowDefinitions>
 
         <Label x:Name="label" Content="The Synagogue:" Grid.Row="0" Style="{StaticResource myLabel}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" />
-        <Label x:Name="label2" Content="The Pray:" Grid.Row="0" Style="{StaticResource myLabel}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" />
-        <Label x:Name="label3" Content="The Synagogue:" Grid.Row="0" Style="{StaticResource myLabel}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" />
+        <Label x:Name="label2" Content="The Pray:" Grid.Row="1" Style="{StaticResource myLabel}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" />
+        <Label x:Name="label3" Content="The Time:" Grid.Row="2" Style="{StaticResource myLabel}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" />
+        <Label x:Name="label4" Content="The Notes:" Grid.Row="3" Style="{StaticResource myLabel}" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" />
+        <ComboBox x:Name="SynagoguecomboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="50,0,0,0" Grid.Column="1" SelectionChanged="KindPraycomboBox_SelectionChanged" />
+        <ComboBox x:Name="KindPraycomboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Margin="50,0,0,0" Grid.Column="1" Grid.Row="1" />
+        <TextBox x:Name="NotestextBox" Grid.Column="1" Grid.Row="3" BorderBrush="Blue" BorderThickness="2" HorizontalAlignment="Left" Margin="50,10,0,19" TextWrapping="Wrap" VerticalAlignment="Center" Height="102" Width="295" />
+
+        <Button x:Name="UpdateButton" Content="Update Pray" Background="Aqua" Foreground="OrangeRed" Grid.Column="1" HorizontalAlignment="Left" Margin="120,9,0,18" Grid.Row="4" VerticalAlignment="Center" Height="40" Width="150" />
+        <Button x:Name="button" Style="{StaticResource BackButton}" Click="button_Click" />
 
     </Grid>
 </Window>

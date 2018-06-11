@@ -10,6 +10,7 @@ namespace DAL
     public interface Idal
     {
         Synagogue getSynagogue(string name);
+        IEnumerable<Pray> getPrays(Synagogue s);
         IEnumerable<Pray> getPrays(Synagogue s, KindPray kp);
         Pray GetPray(Synagogue s, DateTime time);
         void addSynagogue(Synagogue s);

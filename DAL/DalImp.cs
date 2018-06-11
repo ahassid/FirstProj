@@ -29,6 +29,11 @@ namespace Dal
             return s.prays.Where(p => p.pray == kp);
         }
 
+        public IEnumerable<Pray> getPrays(Synagogue s)
+        {
+            return s.prays;
+        }
+
         public Pray GetPray(Synagogue s, DateTime time)
         {
             return s.prays.Find(p => p.time == time);
