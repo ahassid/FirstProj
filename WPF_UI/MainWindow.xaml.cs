@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BL;
 
 
 namespace WPF_UI
@@ -21,10 +22,12 @@ namespace WPF_UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        BL.IBL bl;
+        IBL bl;
         public MainWindow()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
+
         }
 
         private void SynagogueAdditionButton_Click(object sender, RoutedEventArgs e)
@@ -37,6 +40,11 @@ namespace WPF_UI
         {
             var v = new AddingPray();
             v.ShowDialog();
+        }
+
+        private void SynagogueUpdationButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

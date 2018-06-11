@@ -21,21 +21,30 @@ namespace WPF_UI
     /// </summary>
     public partial class AddingPray : Window
     {
-        BL.IBL bl;
+        BL.BLImp bl;
         BE.Pray p;
 
         public AddingPray()
         {
             InitializeComponent();
-
+            bl = BL.FactoryBL.GetBL();
             p = new BE.Pray();
+
             this.KindPraycomboBox.ItemsSource = Enum.GetValues(typeof(BE.KindPray));
             this.SynagoguecomboBox.ItemsSource = bl.GetAllSynagogues();
+            this.SynagoguecomboBox.DisplayMemberPath = "name";
         }
 
-        private void SynagoguecomboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
 
+        private void PrayButton_Click(object sender, RoutedEventArgs e)
+        {
+            p.pray = (BE.KindPray)KindPraycomboBox.SelectedValue;
+            p.synag = (BE.Synagogue)SynagoguecomboBox.SelectedValue;
+            p.time = TimeDatePicker.SelectedDate.Value;
         }
     }
 }

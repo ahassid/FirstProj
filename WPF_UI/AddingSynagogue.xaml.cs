@@ -20,12 +20,13 @@ namespace WPF_UI
     /// </summary>
     public partial class Adding : Window
     {
-        BL.IBL bl;
+        BL.BLImp bl;
         BE.Synagogue s;
 
         public Adding()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
             s = new BE.Synagogue();
 
             this.NosahcomboBox.ItemsSource = Enum.GetValues(typeof(BE.Nosah));
@@ -36,18 +37,17 @@ namespace WPF_UI
             s.name = textBox.Text;
             s.address = textBox1.Text;
             s.notes = textBox2.Text;
-          //  s.nosah = (ComboBoxItem)NosahcomboBox.SelectedItem;
-            
+            s.nosah = (BE.Nosah)NosahcomboBox.SelectedValue;
+
+            bl.addSynagogue(s);
+            MessageBoxResult message = MessageBox.Show("Synagogue Added Successfully!");
+            this.Close();
+
         }
 
-        private void NosahcomboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            this.Close();
         }
     }
 }
